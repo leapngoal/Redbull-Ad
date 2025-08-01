@@ -1,0 +1,141 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Bebas+Neue&family=Manrope:wght@200..800&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* CSS */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+p{
+    color: black;
+}
+
+h1,h2,h3,
+h4,h5,h6,
+span{
+    color: black;
+}
+
+input,
+button{
+    outline: none;
+    border: none;
+}
+
+/* MAIN */
+.main{
+    overflow: hidden;
+}
+
+.container{
+    max-width: 1120px;
+    margin-inline: 1.5rem;
+}
+
+.grid{
+    display: grid;
+    gap: 1.5rem;
+}
+
+.section{
+    padding: 6rem 3rem;
+}
+
+.section_title{
+    text-align: center;
+    font-weight: 200;
+    font-size: 3rem;
+}
+
+/* HEADER & NAVBAR */
+.header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+
+.nav--img{
+    width: 80px;
+}
+
+.nav--menu{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 40%;
+    height: 100vh;
+    background-color: aliceblue;
+    z-index: 1;
+}
+
+.nav--toggle,
+.nav--close{
+    font-size: 1.4rem;
+    cursor: pointer;
+    font-weight: 100;
+}
+
+/* HOME */
+.home-container{
+    padding-top: 2rem;
+    position: relative;
+}
+
+.home--image{
+    position: relative;
+    display: grid;
+    justify-self: center;
+    width: 150px;
+}
+
+.home-img{
+    width: 150px;
+}
+
+.home--title{
+    display: flex;
+    font-size: 5rem;
+    position: absolute;
+    justify-self: center;
+    bottom: 20%;
+    color: red;
+    text-transform: uppercase;
+    z-index: -1;
+    font-family: "Open Sans", sans-serif;
+
+}
